@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <!--charset  =  character set-->
+  <style>
+    body{
+      margin:0px;
+    }
+    a {
+      color:black;
+      text-decoration:none;
+    }
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      border-bottom:3px double grey;
+      margin:0px;
+      padding:10px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 130px 1fr;
+    }
+    #grid ol{
+      border-right:2px solid grey;
+      margin:0px;
+      padding-left:30px;
+      padding-top:15px;
+      width:100px;
+    }
+    #article{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media(max-width:500px){
+      #grid{
+        display: block;
+      }
+      #grid ol{
+        display: inline;
+        /*
+        block 상태에서 가운데 정렬이 안돼 display:inline으로 변경 후 정렬
+        */
+        border: none;
+        list-style-type: none;
+        padding:30px;
+      }
+      body{
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>WEB 배우기 (w.생활코딩)</h2>
+      <p><br>
+      인덱습니다<br><br><br>
+      </p>
+      <img src="cat.jpg" width=300px >
+    </div>
+  </div>
+</body>
+</html>
